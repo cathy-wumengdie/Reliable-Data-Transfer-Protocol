@@ -24,7 +24,7 @@ Start the programs in the following order:
 
 ## 1. Run Network Emulator
 
-```python3 network_emulator.py <emulator port receiving packets from sender> <receiver_host> <receiver listening port> <emulator port receiving ACKs>  <sender_host> <sender listening port> <packet discard probability> <target packet rate (range 10-100 packets per sec)> <verbose-mode (set to 1)>```
+```python3 network_emulator.py <emulator port receiving packets from sender> <receiver_host> <receiver listening port> <emulator port receiving ACKs> <sender_host> <sender listening port> <packet discard probability> <target packet rate (range 10-100 packets per sec)> <verbose-mode>```
 
 Example: 
 - `python3 network_emulator.py 9991 ubuntu2404-004.student.cs.uwaterloo.ca 9994 9993 ubuntu2404-006.student.cs.uwaterloo.ca 9992 0.05 10 1`
