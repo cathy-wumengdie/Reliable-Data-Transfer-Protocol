@@ -23,6 +23,7 @@ The program can be executed on separate CS student environment machines.
 Start the programs in the following order:
 
 1. Run Network Emulator
+
 ```python3 network_emulator.py <emulator port receiving packets from sender> <receiver_host> <receiver listening port> <emulator port receiving ACKs>  <sender_host> <sender listening port> <packet discard probability> <target packet rate (range 10-100 packets per sec)> <verbose-mode (set to 1)>```
 
 Example: 
@@ -30,12 +31,14 @@ Example:
 
 
 2. Run Receiver
+
 ```python3 receiver.py <emulator_host> <emulator port receiving ACKs> <receiver listening port> <output_file>```
 
 Example:
 - `python3 receiver.py ubuntu2404-002.student.cs.uwaterloo.ca 9993 9994 output.txt`
 
 3. Run Sender
+
 ```python3 sender.py <emulator_host> <emulator port receiving packets from sender> <sender listening port> <input_file>```
 
 Example:
