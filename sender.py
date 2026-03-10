@@ -106,11 +106,8 @@ def main():
     
     while base < total:
         # Send as many new packets as window allows
-        sent_any = False
         while next_pkt < total and next_pkt < base + N:
-            if not sent_any:
-                event_time += 1
-                sent_any = True
+            event_time += 1
             send_data_packet(sock, emulator_host, emulator_data_port, chunks, next_pkt, seqnum_log, event_time)
             next_pkt += 1
         
